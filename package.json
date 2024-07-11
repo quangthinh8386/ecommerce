@@ -1,0 +1,11 @@
+{
+  "name": "Ecommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/quangthinh8386/ecommerce.git",
+  "author": "ADMIN\\Admin <thinh>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
