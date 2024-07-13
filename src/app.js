@@ -10,13 +10,16 @@ app.use(helmet());
 app.use(compression());
 
 // init db
+require('./dbs/init.mongodb');
+const { checkOverLoad } = require('./helpers/check.connect');
+checkOverLoad();
 
 // init routes
 app.get('/', (req, res, next) => {
-    const strCompress = "Hello Thinh nha"
+    // const strCompress = "Hello Thinh nha"
     return res.status(500).json({
         message: 'Hello World',
-        metadata: strCompress.repeat(1000000)
+        // metadata: strCompress.repeat(1000000)
     });
 });
 
