@@ -20,8 +20,8 @@ const checkOverLoad = () => {
         const memoryUsage = process.memoryUsage().rss;
         const maxConnect = numCore * 5;
 
-        console.log(`Active connections: ${numConnect}`)
-        console.log(`Memory Usage: ${memoryUsage / 1024 /1024} MB`);
+        // console.log(`Active connections: ${numConnect}`)
+        // console.log(`Memory Usage: ${memoryUsage / 1024 /1024} MB`);
         
         if (numConnect > maxConnect) {
             console.log('Overload connection');
